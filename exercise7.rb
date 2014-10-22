@@ -8,7 +8,7 @@ students = {
 }
 
 def how_many(people)
-	people.each {|cohort, students| puts "#{cohort}: #{students} students"}
+	people.each {|cohort, students| puts "#{cohort}: #{students.to_i} students"}
 end
 
 students[:cohort4] = 43
@@ -17,4 +17,6 @@ def cohort_names(people)
 	people.keys.each {|k| puts "The name of this cohort is: #{k}" }
 end
 
-cohort_names(students)
+students.each {|key, val| (students[key] *= 1.05)}
+
+how_many(students) 
