@@ -14,3 +14,11 @@ display_items(grocery_list)
 puts grocery_list.length
 
 puts grocery_list.include?("bananas")? "You need to pick up bananas" :  "You don't need to pick up bananas today"
+
+puts "The second item in the list is #{grocery_list[1]}"
+
+display_items(grocery_list.sort)
+
+grocery_list.delete("salmon")
+
+display_items(grocery_list.sort)
