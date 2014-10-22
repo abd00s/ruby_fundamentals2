@@ -3,4 +3,10 @@
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-grocery_list.each {|item| puts "* #{item}" }
+def display_items(items)
+	items.each {|item| puts "* #{item}" }
+end
+
+grocery_list << "rice"
+
+display_items(grocery_list)
