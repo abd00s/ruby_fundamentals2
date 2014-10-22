@@ -19,4 +19,5 @@ end
 
 students.each {|key, val| (students[key] *= 1.05)}
 
-how_many(students) 
+students.delete(:cohort2)
+how_many(students)
